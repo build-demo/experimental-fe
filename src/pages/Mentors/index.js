@@ -7,13 +7,11 @@ import "./Mentors.styles.css";
 const Mentors = (props) => {
   const { search } = props.location;
   const [mentors, setMentors] = useState([{}, {}, {}, {}, {},{},{}, {}]);
-  const [id, setId] = useState("");
 
   useEffect(() => {
     const fetchMentors = async () => {
       const { data } = await getAllMentors(search);
       data && setMentors(data.users);
-      data && setId(data.issueId);
     };
     fetchMentors();
   }, [search]);
