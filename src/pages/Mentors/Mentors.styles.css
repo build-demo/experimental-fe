@@ -4,5 +4,12 @@
   grid-gap: 1.5rem 1.5rem;
   padding: 2rem;
   max-width: 60%;
-  margin: auto;
+  margin: 3rem auto;
+}
+
+.menu-bar {
+  background-color: #f7f5ec;
+  width: 100%;
+  height: 10rem;
+  text-align: center;
 }
