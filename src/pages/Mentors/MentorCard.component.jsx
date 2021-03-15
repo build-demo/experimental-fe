@@ -50,21 +50,27 @@ const MentorCard = ({ mentorProfile }) => {
             href="https://codepen.io/collection/XdWJOQ/"
             class="fa fa-facebook"
             aria-hidden="true"
-          ></a>
+          >
+            <i class="devicon-python-plain"></i>
+          </a>
         </li>
         <li>
           <a
             href="https://codepen.io/collection/XdWJOQ/"
             class="fa fa-twitter"
             aria-hidden="true"
-          ></a>
+          >
+            <i class="devicon-javascript-plain"></i>
+          </a>
         </li>
         <li>
           <a
             href="https://codepen.io/collection/XdWJOQ/"
             class="fa fa-google-plus"
             aria-hidden="true"
-          ></a>
+          >
+            <i class="devicon-ruby-plain"></i>
+          </a>
         </li>
         <li>
           <a
