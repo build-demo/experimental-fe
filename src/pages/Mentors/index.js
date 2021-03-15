@@ -6,20 +6,22 @@ import "./Mentors.styles.css";
 
 const Mentors = (props) => {
   const { search } = props.location;
-  const [mentors, setMentors] = useState([]);
-  const [id, setId] = useState("");
+  const [mentors, setMentors] = useState([{}, {}, {}, {}, {},{},{}, {}]);
 
   useEffect(() => {
     const fetchMentors = async () => {
       const { data } = await getAllMentors(search);
       data && setMentors(data.users);
-      data && setId(data.issueId);
     };
     fetchMentors();
   }, [search]);
 
   return (
-    <div style={{ margin: "3rem 0" }}>
+    <>
+    <div className="menu-bar">
+      <h3 style={{ paddingTop: "2rem" }}> Pick your Mentor</h3>
+    </div>
+    <div className="grid-container" >
       {mentors && mentors.length ? (
         mentors.map((mentor) => (
           <div key={mentor._id} style={{ margin: "3rem 0" }}>
@@ -30,6 +32,7 @@ const Mentors = (props) => {
         <div>There are no mentors</div>
       )}
     </div>
+    </>
   );
 };
 
