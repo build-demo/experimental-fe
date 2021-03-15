@@ -8,5 +8,6 @@ export const config ={
     selectedTimeForMeeting: {
         startTime:"",
         endTime:""
-    }
+    },
+    issueDescription: ""
 }

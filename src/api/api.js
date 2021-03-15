@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { config } from '../config';
 
 export const signinUser = async ()=> {
   console.log(`${process.env.REACT_APP_BASE_URL}/auth/google`, 'redirect');
@@ -14,12 +15,18 @@ export const signinUser = async ()=> {
   }
 }
 
-export const getAllMentors = async( params)=>{
+export const getAllMentors = async(email,  proficientLanguages)=>{
+  let url = config.backendUrl + "/mentor/getMentor"
   try {
     const result = await axios({
-      method: 'get',
-      url: `${process.env.REACT_APP_BASE_URL}/users/${params}`
+      method: 'post',
+      url: url,
+      data: {
+        "email": email,
+        "proficientLanguages": proficientLanguages
+      }
     })
+    console.log(result)
     return result
   } catch (error) {
     console.log(error);
