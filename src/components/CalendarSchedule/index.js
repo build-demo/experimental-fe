@@ -124,11 +124,6 @@ const Contact = ({ title, content, id, t }) => {
   return (
     <S.ContactContainer id={id}>
       <S.Contact >
-        <Row type="flex" justify="space-around">
-          <div style={{marginBottom:"30px", display:"flex", justifyContent:"center", alignItems:"center"}}>
-            <h1>Schedule Meeting</h1>
-          </div>
-        </Row>
         <Row type="flex" justify="space-between" align="middle">
           <Col lg={12} md={11} sm={24}>
             <Row type="flex" gutter={20} style={{paddingBottom: "50px"}}>
