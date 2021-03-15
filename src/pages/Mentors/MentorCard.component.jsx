@@ -42,8 +42,9 @@ const MentorCard = ({ mentorProfile }) => {
       </div>
       <div className="team-content">
         <h3 className="name">Michele Miller</h3>
-        <h4 className="title">Web Developer</h4>
+        <h4 className="title">MLH Mentor</h4>
       </div>
+      <button className="btn"> calendar</button>
       <ul className="social">
         <li>
           <a
