@@ -21,7 +21,7 @@ const Mentors = (props) => {
   return (
     <>
     <div className="menu-bar">
-      <h3> Pick your Mentor</h3>
+      <h3 style={{ paddingTop: "2rem" }}> Pick your Mentor</h3>
     </div>
     <div className="grid-container" >
       {mentors && mentors.length ? (

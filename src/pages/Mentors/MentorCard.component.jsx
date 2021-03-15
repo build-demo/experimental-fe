@@ -12,9 +12,7 @@ const MentorCard = ({ mentorProfile }) => {
         />
       </div>
       <div className="team-content">
-        <h3 style={{ paddingTop: "2rem" }} className="name">
-          Michele Miller
-        </h3>
+        <h3 className="name">Michele Miller</h3>
         <h4 className="title">MLH Mentor</h4>
       </div>
       <button className="btn"> calendar</button>
