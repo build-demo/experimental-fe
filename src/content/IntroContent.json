@@ -1,0 +1,13 @@
+{
+  "title": "Find Help and Get Unblocked",
+  "text": "Stuck with a new tech-stack? No worries! Search through the best in your organization and arrange a meeting with them",
+  "button": [
+    {
+      "title": "Sign In/Up with Google"
+    },
+    {
+      "title": "Learn More",
+      "color": "#fff"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+.card-img-top {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 7rem;
+}
+
+.github-sigin {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.google-signin {
+  background-color: #db4437 !important;
+  border-color: #db4437 !important;
+}
