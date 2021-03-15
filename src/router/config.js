@@ -20,6 +20,10 @@ const routes = [
     {
       path: ["/scheduleMeeting"],
       component: ["ScheduleMeeting"]
+    },
+    {
+      path: ["/meetingConfirmed"],
+      component: ["MeetingConfirmed"]
     }
   ];
   
