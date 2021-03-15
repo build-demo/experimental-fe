@@ -6,7 +6,7 @@ import "./Mentors.styles.css";
 
 const Mentors = (props) => {
   const { search } = props.location;
-  const [mentors, setMentors] = useState([]);
+  const [mentors, setMentors] = useState([{}, {}, {}, {}, {}, {}]);
   const [id, setId] = useState("");
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Mentors = (props) => {
   }, [search]);
 
   return (
-    <div style={{ margin: "3rem 0" }}>
+    <div className="grid-container" style={{ margin: "3rem 0" }}>
       {mentors && mentors.length ? (
         mentors.map((mentor) => (
           <div key={mentor._id} style={{ margin: "3rem 0" }}>
